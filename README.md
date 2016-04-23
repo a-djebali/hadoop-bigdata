@@ -2,14 +2,13 @@
 
 <ul>
   <li><a href="#mapreduce">Map Reduce</a></li>
-  <ul>
-    <li><a href="#example1">Total movies rated by user</a></li>
-  </ul>
+  <li><a href="#other">Other tools soon...</a></li>
+
 </ul>
 
-<h1 id="mapreduce"></h1>
+<h1 id="mapreduce">Map Reduce</h1>
 <h3 id="example1">Total movies rated by user</h3>
-<p>In this example we're trying to get total movies rated by each user using <a href="http://grouplens.org/datasets/movielens/"> movielens</a> dataset</p>
+<p>In this example we're trying to get all movies rated by each user using <a href="http://grouplens.org/datasets/movielens/"> movielens</a> dataset</p>
 <img src="imgs/demo.png">
 <pre>
   <code>
@@ -31,3 +30,5 @@
       MovieByUserCounter.run()
   </code>
 </pre>
+
+<h1 id="other">Map Reduce</h1>
