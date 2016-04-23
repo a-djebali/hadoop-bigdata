@@ -31,4 +31,4 @@
   </code>
 </pre>
 
-<h1 id="other">Map Reduce</h1>
+<h1 id="other">Other tools soon...</h1>
