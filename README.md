@@ -31,15 +31,15 @@ Run
 
 Output
 
-``
+```
   "chars" 3654
   "lines" 123
   "words" 417
-``
+```
 
 ### Total movies rated by user
 
-In this example we're trying to get all movies rated by each user using `MovieLens <http://grouplens.org/datasets/movielens/>` dataset
+In this example we're trying to get all movies rated by each user using `MovieLens <http://grouplens.org/datasets/movielens/>`_ dataset
 
 .. image:: imgs/demo.png
 
@@ -68,7 +68,7 @@ Run
 
 Output 
 
-``
+```
   "938"   108
   "939"   49
   "94"    400
@@ -81,6 +81,6 @@ Output
   "97"    63
   "98"    27
   "99"    136
-``
+```
 
 # Other examples soon...
