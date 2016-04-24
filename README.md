@@ -31,11 +31,11 @@ Run
 
 Output
 
-```
+``
   "chars" 3654
   "lines" 123
   "words" 417
-```
+``
 
 ### Total movies rated by user
 
@@ -68,7 +68,7 @@ Run
 
 Output 
 
-```
+``
   "938"   108
   "939"   49
   "94"    400
@@ -81,6 +81,6 @@ Output
   "97"    63
   "98"    27
   "99"    136
-```
+``
 
 # Other examples soon...
