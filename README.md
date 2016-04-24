@@ -1,15 +1,48 @@
 # Big Data with Hadoop 
 
-<ul>
-  <li><a href="#mapreduce">Map Reduce</a></li>
-  <li><a href="#other">Other tools soon...</a></li>
+Here's some examples of Hadoop tools
 
-</ul>
+# Map Reduce</h1>
 
-<h1 id="mapreduce">Map Reduce</h1>
-<h3 id="example1">Total movies rated by user</h3>
-<p>In this example we're trying to get all movies rated by each user using <a href="http://grouplens.org/datasets/movielens/"> movielens</a> dataset</p>
-<img src="imgs/demo.png">
+### Simple word counter 
+
+Count total chars, lines and words.
+
+```python
+from mrjob.job import MRJob
+
+class MRWordFrequencyCount(MRJob):
+  
+  def mapper(self, _, line):
+    yield "chars", len(line)
+    yield "words", len(line.split())
+    yield "lines", 1
+
+  def reducer(self, key, values):
+    yield key, sum(values)
+
+if __name__ == '__main__':
+  MRWordFrequencyCount.run()
+```
+
+Run
+
+``$ python mr_word_count.py file``
+
+Output
+
+::
+
+  "chars" 3654
+  "lines" 123
+  "words" 417
+
+
+### Total movies rated by user
+
+In this example we're trying to get all movies rated by each user using `MovieLens <http://grouplens.org/datasets/movielens/>` dataset
+
+.. image:: imgs/demo.png
 
 ```python
 from mrjob.job import MRJob
@@ -30,4 +63,26 @@ if __name__ == '__main__':
   MovieByUserCounter.run()
 ```
 
-<h1 id="other">Other tools soon...</h1>
+Run
+
+``$ python MoviesByUser.py ml-100k/u.data``
+
+Output 
+
+::
+
+  "938"   108
+  "939"   49
+  "94"    400
+  "940"   107
+  "941"   22
+  "942"   79
+  "943"   168
+  "95"    278
+  "96"    56
+  "97"    63
+  "98"    27
+  "99"    136
+
+
+# Other examples soon...
