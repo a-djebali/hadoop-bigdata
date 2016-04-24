@@ -39,7 +39,7 @@ Output
 
 ### Total movies rated by user
 
-In this example we're trying to get all movies rated by each user using `MovieLens <http://grouplens.org/datasets/movielens/>`_ dataset
+In this example we're trying to get all movies rated by each user using <a href="files.grouplens.org/datasets/movielens/ml-100k.zip">MovieLens </a> dataset
 
 .. image:: imgs/demo.png
 
